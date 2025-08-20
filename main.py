@@ -19,8 +19,8 @@ sensor_data = {
 ip = None  # Will be set after connecting to WiFi
 
 # ---------- WiFi Connection ----------
-SSID = 'XXX'
-PASSWORD = 'XXX'
+SSID = 'UPDATEME'
+PASSWORD = 'UPDATEME'
 
 def wifi_connect():
     global ip
@@ -38,7 +38,7 @@ def wifi_connect():
 def sensor_loop():
     global sensor_data
     # I2C settings for your sensor
-    i2c = I2C(0, scl=Pin(6, pull=Pin.PULL_UP), sda=Pin(5, pull=Pin.PULL_UP), freq=50000)
+    i2c = I2C(0, scl=Pin(21, pull=Pin.PULL_UP), sda=Pin(20, pull=Pin.PULL_UP), freq=50000)
     with SEN5x(i2c) as sen:
         while True:
             ppm1_0, ppm2_5, ppm4_0, ppm10_0, rh, t, voc, nox = sen.measured_values
