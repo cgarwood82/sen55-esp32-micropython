@@ -22,7 +22,7 @@ standard port 80.
 
 ## Development
 If you are using a brand new esp32 module, you'll need to flash the esp32-c3 firmware. The firmware can be found
-[here](https://micropython.org/download/esp32-c3/). Once this flashed, you are  then start working from your preferred
+[here](https://micropython.org/download/ESP32_GENERIC_C3/). Once this flashed, you are  then start working from your preferred
 development environment. I personally used JetBrains PyCharm and made use of the excellent [MicroPython plugin](https://plugins.jetbrains.com/plugin/16233-micropython).
 
 Be sure to install the requirements.txt file before you start as that isn't included in this repo. You'll need this to 
