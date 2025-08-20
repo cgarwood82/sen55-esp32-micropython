@@ -1,9 +1,6 @@
 """ILI9488 demo (fonts)."""
-from time import sleep
 from ili9488 import Display, color565
-from machine import Pin, SPI
-from xglcd_font import XglcdFont
-import random
+
 
 def test():
     """Test code."""
